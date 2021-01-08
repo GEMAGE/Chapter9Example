@@ -1,0 +1,23 @@
+# Chapter9Example
+public class Circle {
+	static int numberOfObjects=0;
+	double radius;
+	
+	Circle(){
+		radius=1;
+		numberOfObjects++;
+	}
+	
+	Circle(double newRadius){
+		radius=newRadius;
+		numberOfObjects++;
+	}
+	
+	Static int getNumberOfObjects() {
+		return numberOfObjects;
+	}
+	
+	double getArea() {
+		return radius*radius*Math.PI;
+	}
+}
